@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Information Form</title>
+    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap)" rel="stylesheet">
+    <script src="[https://unpkg.com/@tailwindcss/browser@latest](https://unpkg.com/@tailwindcss/browser@latest)"></script>
+    <script>
+        function showThankYou(event) {
+            event.preventDefault();
+            document.getElementById("formContainer").innerHTML = "<h2>Thank you for submitting details!</h2>";
+        }
+    </script>
+
+  </head>
+  <body class="bg-gray-100 font-inter">
+    <div class="min-h-screen flex items-center justify-center py-10">
+      <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-2xl">
+        <h2 class="text-2xl font-semibold mb-6 text-center text-gray-800">Candidate Information Form</h2>
+        <form action="thankyou.html" id="infoForm" class="space-y-4">
+          <div>
+            <label for="first_name" class="block text-gray-700 text-sm font-bold mb-2">First Name</label>
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Enter your First Name"
+              required
+            />
+          </div>
+          <div>
+            <label for="last_name" class="block text-gray-700 text-sm font-bold mb-2">Last Name</label>
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Enter your Last Name"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="age" class="block text-gray-700 text-sm font-bold mb-2">Age</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Enter your age"
+              required
+            />
+          </div>
+          <div>
+            <label for="qualification" class="block text-gray-700 text-sm font-bold mb-2">Qualification</label>
+            <input
+              type="text"
+              id="qualification"
+              name="qualification"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Enter your qualification"
+              required
+            />
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label for="city" class="block text-gray-700 text-sm font-bold mb-2">City</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Enter your city"
+                required
+              />
+            </div>
+            <div>
+              <label for="state" class="block text-gray-700 text-sm font-bold mb-2">State</label>
+              <input
+                type="text"
+                id="state"
+                name="state"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Enter your state"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <label for="country" class="block text-gray-700 text-sm font-bold mb-2">Country</label>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Enter your country"
+              required
+            />
+          </div>
+          <div>
+            <label for="country" class="block text-gray-700 text-sm font-bold mb-2">Zip Code</label>
+            <input
+              type="number"
+              id="zip"
+              name="zip"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Enter your Zip code"
+              required
+            />
+          </div>
+          <div>
+            <label for="Refernce" class="block text-gray-700 text-sm font-bold mb-2">Refernce</label>
+            <input
+              type="text"
+              id="Refernce"
+              name="Refernce"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Enter your Refernce"
+              required
+            />
+          </div>
+          <div>
+            <label for="profession" class="block text-gray-700 text-sm font-bold mb-2">Profession</label>
+            <input
+              type="text"
+              id="profession"
+              name="profession"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Enter your profession"
+              required
+            />
+          </div>
+          <div>
+            <label for="hobbies" class="block text-gray-700 text-sm font-bold mb-2">Hobbies</label>
+            <input
+              type="text"
+              id="hobbies"
+              name="hobbies"
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Enter your hobbies (comma-separated)"
+              required
+            />
+          </div>
+          <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+ 
